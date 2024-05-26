@@ -1,0 +1,754 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <!DOCTYPE HTML>
+    <html lang="en">
+
+    <head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title> Boat Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="https://www.dhakaboatclub.com/assets/frontend/css/reset.css">
+        <link type="text/css" rel="stylesheet" href="https://www.dhakaboatclub.com/assets/frontend/css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="https://www.dhakaboatclub.com/assets/frontend/css/style.css">
+        <link type="text/css" rel="stylesheet" href="https://www.dhakaboatclub.com/assets/frontend/css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!--=============== icons ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
+
+        <!-- Livewire Styles -->
+        <style>
+            [wire\:loading],
+            [wire\:loading\.delay],
+            [wire\:loading\.inline-block],
+            [wire\:loading\.inline],
+            [wire\:loading\.block],
+            [wire\:loading\.flex],
+            [wire\:loading\.table],
+            [wire\:loading\.grid],
+            [wire\:loading\.inline-flex] {
+                display: none;
+            }
+
+            [wire\:loading\.delay\.shortest],
+            [wire\:loading\.delay\.shorter],
+            [wire\:loading\.delay\.short],
+            [wire\:loading\.delay\.long],
+            [wire\:loading\.delay\.longer],
+            [wire\:loading\.delay\.longest] {
+                display: none;
+            }
+
+            [wire\:offline] {
+                display: none;
+            }
+
+            [wire\:dirty]:not(textarea):not(input):not(select) {
+                display: none;
+            }
+
+            input:-webkit-autofill,
+            select:-webkit-autofill,
+            textarea:-webkit-autofill {
+                animation-duration: 50000s;
+                animation-name: livewireautofill;
+            }
+
+            @keyframes livewireautofill {
+                from {}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="loader">
+            <!-- <div class="welcomes">
+                <span class="splashs"></span>
+                <span id="welcomes"></span>
+              </div> -->
+        </div>
+        <!--================= main start ================-->
+        <div id="main">
+            <!--=============== header ===============-->
+            <header wire:id="NIVDITJfv9QFknQFCfTP" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;NIVDITJfv9QFknQFCfTP&quot;,&quot;name&quot;:&quot;frontend.header-component&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;a9f07e47&quot;,&quot;data&quot;:{&quot;facilities&quot;:[]},&quot;dataMeta&quot;:{&quot;modelCollections&quot;:{&quot;facilities&quot;:{&quot;class&quot;:&quot;App\\Models\\FacilityModel&quot;,&quot;id&quot;:[33,35,36,37,38,39,40,41],&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;2a3f4aa509fa50a344e4341ed88f049b1927f876e112cf2e54b40c2f45f8743c&quot;}}">
+                <div class="header-inner">
+                    <div class="container-fluid">
+                        <!--logo-->
+                        <div class="logo-holder">
+                            <a href="https://www.dhakaboatclub.com">
+                <img src="logo.jpg" class="logo-vis ress" alt="">
+                
+                </a>
+                        </div>
+                        <!--Navigation -->
+                        <div class="nav-holder">
+                            <nav>
+                                <ul>
+                                    <li><a href="https://www.dhakaboatclub.com" class="act-link">Home</a></li>
+                                    <li><a href="#">About</a> <i class="fa-solid fa-chevron-down"></i>
+                                        <!-- Drop down -->
+                                        <ul class="p-0">
+                                            <li><a href="https://www.dhakaboatclub.com/president-massage">President Massage</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/advisor-massage">Advisor Massage</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/ec-member">EC Members</a></li>
+
+                                            <!-- <li><a href="https://www.dhakaboatclub.com/club-history">Club History </a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/past-president">Past Presidents </a></li> -->
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="https://www.dhakaboatclub.com/affiliated-club"> Affiliated Clubs</a></li> -->
+                                    <li>
+                                        <a href="#"> Facilities</a> <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="p-0">
+                                            <!-- <li><a href="banquet-hall.html"> Banquet Halls</a> <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="ul3 p-0">
+                                        <li><a href="banquet-hall.html">1</a></li>
+                                        <li><a href="banquet-hall.html">2</a></li>
+                                        <li><a href="banquet-hall.html">3</a></li>
+                                    </ul>
+                                </li> -->
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/33">Lobby/Lounge</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/35">Food &amp; Beverage</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/36">Café &amp; Bakery </a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/37">The Residence</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/38">Velvet Lounge</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/39">Billiards Room</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/40">Card Room</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/facilities/41">Banquet Hall</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Event</a> <i class="fa-solid fa-chevron-down"></i>
+                                        <ul class="p-0">
+                                            <li><a href="https://www.dhakaboatclub.com/event">Event Calender</a></li>
+                                            <li><a href="https://www.dhakaboatclub.com/upcoming-event">Upcoming Events</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.dhakaboatclub.com/gallery">Gallery</a></li>
+
+                                    <li><a href="https://www.dhakaboatclub.com/category">Menu</a></li>
+                                    <li><a href="https://www.dhakaboatclub.com/reservation">Reservation</a></li>
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                    <a href="https://www.dhakaboatclub.com/member-component" class="header_button" id="submit">Become a member</a>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Livewire Component wire-end:NIVDITJfv9QFknQFCfTP -->;
+            <!--header end-->
+            <!--=============== wrapper ===============-->
+            <div id="wrapper">
+                <!--=============== Hero content ===============-->
+                <style wire:id="8sdv5k7LG9Eeot2RIpfi" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;8sdv5k7LG9Eeot2RIpfi&quot;,&quot;name&quot;:&quot;frontend.landing-component&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;21f95dfc&quot;,&quot;data&quot;:{&quot;first_info&quot;:[],&quot;second_info&quot;:[],&quot;third_info&quot;:[],&quot;four_info&quot;:[],&quot;five_info&quot;:[],&quot;facility_info&quot;:[],&quot;president_info&quot;:[],&quot;testimonial_info&quot;:[]},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;first_info&quot;:{&quot;class&quot;:&quot;App\\Models\\LandingFirstModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;second_info&quot;:{&quot;class&quot;:&quot;App\\Models\\LandingSecondModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;third_info&quot;:{&quot;class&quot;:&quot;App\\Models\\LandingThirdModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;four_info&quot;:{&quot;class&quot;:&quot;App\\Models\\LandingFourModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;five_info&quot;:{&quot;class&quot;:&quot;App\\Models\\LandingFiveModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;president_info&quot;:{&quot;class&quot;:&quot;App\\Models\\AboutModel&quot;,&quot;id&quot;:1,&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null}},&quot;modelCollections&quot;:{&quot;facility_info&quot;:{&quot;class&quot;:&quot;App\\Models\\FacilityModel&quot;,&quot;id&quot;:[33,35,36,37,38,39,40,41],&quot;relations&quot;:[],&quot;connection&quot;:&quot;mysql&quot;,&quot;collectionClass&quot;:null},&quot;testimonial_info&quot;:{&quot;class&quot;:null,&quot;id&quot;:[],&quot;relations&quot;:[],&quot;connection&quot;:null,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;bf52f00749299ad5bc70506c8c0ed1939db018001b951cda371a2a3e5a15a870&quot;}}">
+                    section {
+                        padding: 30px;
+                    }
+
+                    section#sec3 {
+                        padding: 0;
+                    }
+
+                    nav li {
+                        padding: 10px 12px;
+                    }
+
+                    .p-10 {
+                        padding-top: 30px;
+                    }
+
+                    section#sec2,
+                    section#sec4 {
+                        padding: 80px 0;
+                    }
+                </style>
+                <div class="content full-height hero-content text-center" id="sec0">
+                    <div class="media-container video-parallax" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);">
+                        <div class="bg bg-parallax" style="background-image:url(https://www.dhakaboatclub.com/assets/frontend/images/bg/33.jpg"></div>
+                        <div class="video-container">
+                            <video autoplay loop muted class="bgvid">
+                    <source src="/b.mp4" type="video/mp4">
+                </video>
+                        </div>
+                    </div>
+                    <div class="hero-title-holder">
+                        <div class="overlay"></div>
+                        <div class="hero-title">
+                            <div class="hero-decor b-dec">
+                                <div class="half-circle"></div>
+                            </div>
+                            <div class="separator color-separator"></div>
+                            <h3>Welcome to <br>  Boat Club</h3>
+                            <h4>Finest of clubs</h4>
+                        </div>
+                    </div>
+                    <div class="hero-link">
+                        <a class="custom-scroll-link text-white" href="#"><i class="fa fa-angle-double-down"></i></a>
+                    </div>
+                </div>
+                <!--hero end-->
+
+                <div class="content">
+                    <!--=============== Section 1 ===============-->
+                    <section class="sec about-section" id="sec1">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="section-title pt-2">
+                                    <h3>HISTORY</h3>
+                                    <h4 class="decor-title text-white">OUR STORY</h4>
+                                    <div class="separator color-separator"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-white">
+                                        <h3 style="text-align: justify;"></h3>
+                                        <h2 style="text-align: justify; "></h2>
+                                        <h3 style="text-align: justify;"></h3>
+                                        <h6></h6>
+                                        <p style="margin-top: 0cm; text-align: justify; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"><font color="#ffffff">Welcome
+to Dhaka Boat Club Limited(DBCL), the premier recreational boating and social
+club in Dhaka, Bangladesh! Established in 1985, Dhaka Boat Club has been
+providing a unique and enjoyable boating experience to its members for over
+three decades.<br></font></span>
+                                            <font color="#ffffff"><span style="line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;">The
+Dhaka Boat Club was founded from a passion for boating, which grew from an
+innate human curiosity and interest. It is the first club of its kind in Dhaka
+and located on the picturesque shores of the Turag River. The club primarily
+focuses on boating, but also offers other sports facilities like tennis,
+squash, billiards, and more.<br></span></font><span style="line-height: 107%; font-family: &quot;Times New Roman&quot;, serif;"><font color="#ffffff">Families can enjoy their free time together and meet new
+people. This website aims to provide information about the club, keep members
+updated on events, and record important milestones. As the club's journey has
+just begun, active participation and feedback are highly valued.</font></span></p>
+                                        <h3 style="margin-top: 0cm; text-align: justify; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">
+                                            <o:p>&nbsp;</o:p>
+                                        </h3>
+                                        <h3 style="margin-top: 0cm; text-align: justify; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="mso-bidi-font-size:12.0pt;line-height:107%;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">
+<!--[if !supportLineBreakNewLine]-->
+<!--[endif]--></span><span style="mso-bidi-font-size:12.0pt;line-height:107%;
+font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+color:windowtext;mso-color-alt:windowtext"></span>
+                                            <o:p></o:p>
+                                        </h3>
+                                        <h3 style="text-align: justify; ">
+
+                                        </h3>
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-slider-holder" style="margin-top: 2px">
+                                        <div class="customNavigation">
+                                            <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                                            <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
+                                        </div>
+                                        <div class="single-slider owl-carousel">
+                                            <div class="item">
+                                                <img src="https://www.dhakaboatclub.com/storage/lands/16966898790.jpg" class="respimg" alt="HISTORY">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--=============== Section 2 ===============-->
+                    <section class="sec parallax-section bg-dark" id="sec2">
+                        <div class="media-container video-parallax" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);">
+                            <div class="bg mob-bg" style="background-image: url(assets/frontend/images/bg/18.jpg)"></div>
+                            <div class="video-container">
+                                <video autoplay loop muted class="bgvid">
+                        <source src="/b2.mp4" type="video/mp4">
+                    </video>
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <h2>OPEN EVERYDAY</h2>
+                            <h3>CALL FOR RESERVATIONS</h3>
+                            <div class="bold-separator">
+                                <span></span>
+                            </div>
+                            <div class="work-time">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3>SUNDAY -</h3>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>- SATURDAY</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="p-2">11:30 (AM) - 11:00 (PM)</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="big-number"><a href="#">+880 16724-295026</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--section end-->
+
+                    <!--=============== Section 3 ===============-->
+                    <section class="sec about-section" id="sec3">
+                        <div class="container">
+                            <div class="col-md-12 p-10">
+                                <div class="section-title">
+                                    <h3>OUR RESTAURANt</h3>
+                                    <h4 class="decor-title text-white">Serving great food</h4>
+                                    <div class="separator color-separator"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="single-slider-holder" style="margin-top: 2px">
+                                            <div class="customNavigation">
+                                                <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                                                <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
+                                            </div>
+                                            <div class="single-slider owl-carousel">
+                                                <div class="item">
+                                                    <img src="https://www.dhakaboatclub.com/storage/lands/16966900030.jpg" class="respimg" alt="OUR RESTAURANt">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="text-white">
+                                            <h4 style="text-align: justify; ">
+                                                <p class="MsoNormal" style="text-align: justify; line-height: normal;"><span style="font-size:12.0pt;
+font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;"><font color="#ffffff">Club
+Restaurant is a unique establishment that combines the vibrant atmosphere&nbsp;
+with the delectable culinary experience of a high-end restaurant. It caters to
+individuals seeking a memorable evening of entertainment, socializing, and
+exceptional dining all under one roof. This trendy concept has gained
+popularity in recent years, providing a sophisticated and lively setting for
+patrons to enjoy.<o:p></o:p></font></span></p>
+                                                <p class="MsoNormal" style="text-align: justify; margin-bottom: 0cm; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><font color="#ffffff">&nbsp;</font></span><span style="color: rgb(255, 255, 255); font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">The ambiance of a club restaurant is
+carefully designed to create an immersive and energetic environment. The interior
+typically features stylish décor, contemporary lighting, and a blend of modern
+and classic elements.</span></p>
+                                                <p class="MsoNormal" style="text-align: justify; margin-bottom: 0cm; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><font color="#ffffff">&nbsp;</font></span><span style="color: rgb(255, 255, 255); font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">The club restaurant experience
+extends beyond the atmosphere, as the culinary offerings are a significant
+highlight. The menu showcases a wide range of gourmet dishes prepared by
+skilled chefs who prioritize creativity and quality. From appetizers and small
+plates to main courses and desserts, the menu caters to diverse tastes and
+dietary preferences. The cuisine may span various culinary traditions, offering
+a fusion of international flavors or focusing on a specific theme.</span></p>
+                                                <p class="MsoNormal" style="text-align: justify; margin-bottom: 0cm; line-height: normal;"><span style="font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:
+&quot;Times New Roman&quot;"><font color="#ffffff">&nbsp;</font></span><span style="color: rgb(255, 255, 255); font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">In summary, a club restaurant
+is&nbsp; a high-end restaurant, providing a multi-dimensional experience of
+dining, entertainment, and socializing. It offers a vibrant atmosphere, gourmet
+cuisine, inventive cocktails, live performances, and a lively ambiance, making
+it an appealing destination for those seeking a memorable evening out.</span></p>
+                                            </h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--===============Section 4 ===============-->
+                    <section class="sec parallax-section" id="sec4">
+                        <div class="bg bg-parallax" style="background:#191919" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);"></div>
+                        <div class="container">
+                            <div class="section-title">
+                                <h3>DISCOVER OUR CLUB FACILITIES</h3>
+                                <h4 class="decor-title text-white">THE BEAUTY</h4>
+                                <div class="separator color-separator"></div>
+                            </div>
+                        </div>
+                        <div class="containers">
+                            <div class="cards">
+                                <div class="imgBx" data-text="Lobby/Lounge">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1698217110.jpg" alt="Lobby/Lounge">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Lobby/Lounge</h3>
+                                        <p class="pce">The  Boat Club Lobby/Lounge is an exclusive waterfront haven situated in the side of the river Turag of Dhaka,</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/33">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Food &amp; Beverage">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1698217330.jpg" alt="Food &amp; Beverage">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Food &amp; Beverage</h3>
+                                        <p class="pce">
+                                        </p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/35">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Café &amp; Bakery ">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1699421325.jpg" alt="Café &amp; Bakery ">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Café &amp; Bakery </h3>
+                                        <p class="pce">Café & Bakery </p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/36">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="The Residence">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1700385709.jpg" alt="The Residence">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">The Residence</h3>
+                                        <p class="pce">The Residence</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/37">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Velvet Lounge">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1700483156.jpg" alt="Velvet Lounge">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Velvet Lounge</h3>
+                                        <p class="pce">Velvet Lounge</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/38">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Billiards Room">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1700497449.jpg" alt="Billiards Room">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Billiards Room</h3>
+                                        <p class="pce">Billiards Room</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/39">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Card Room">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1700664554.jpg" alt="Card Room">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Card Room</h3>
+                                        <p class="pce">Card Room</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/40">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cards">
+                                <div class="imgBx" data-text="Banquet Hall">
+                                    <img src="https://www.dhakaboatclub.com/storage/facility/1701954811.jpg" alt="Banquet Hall">
+                                </div>
+                                <div class="contents">
+                                    <div>
+                                        <h3 class="h3c">Banquet Hall</h3>
+                                        <p class="pce">When it comes to creating unforgettable memories for your guests, the banquet hall at Dhaka Boat Club is the perfect</p>
+                                        <a href="https://www.dhakaboatclub.com/facilities/41">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--=============== PRESIDENT ===============-->
+                    <section class="sec about-section" id="sec5">
+                        <!-- <div class="triangle-decor"></div> -->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="person.jpg" class="img-fluid" style="width:100%" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="section-title">
+                                        <h3>PRESIDENT Message</h3>
+                                        <h4 class="decor-title text-white">
+                                         Ishak Ahmed, BPM (Bar) <br> President -  Boat Club Limited
+                                        </h4>
+                                        <div class="separator color-separator"></div>
+                                    </div>
+                                    <p class="text-white">
+                                        <ul>
+                                            <li>
+                                                <p style="text-align: justify;">
+                                                    <font color="#ffffff">On behalf of the  Boat Club I would like to welcome you to our website.<br>Latent in every human being is the innate quality of curiosity and the urge to follow something, the urge to know more
+                                                        about what pleases him, .<br>This is a moment of historic significance as this is the first Club of its kind in Dhaka. Located on the pristine and lush shores of the river Turag, it is that kind of
+                                                        club – where the flavors of fine life are to be savored by enjoying the essence of the serene splendor of nature while inside Dhaka city.<br>DBC is primary a Boating Club as its name suggests, however
+                                                        in addition to aquatic sports it will provide other sports facilities such as Angling, Tennis, Squash, Billiards and many more. In addition to this the Club will also serve as an oasis to an exclusive
+                                                        group of families to come and spend their free time and meet likeminded people.<br>By this website we aim to provide you with information about the club and keep you updated about events and other
+                                                        activities of the Club. The objective of the website will also be to record landmarks and events of Club history spanning from the day of its inception, as many of these might be blurred out of existence
+                                                        over time. Therefore creation of this site is a humble step to provide you with a comprehensive insight into many interesting and factual aspects of our Club. This is also in keeping with the commitment
+                                                        to make optimum use of the available technology of the 21st century.<br>The journey for  Boat Club has just started, and we have many miles to sail, hence we look forward to your active participation
+                                                        and always value your feedback.</font>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <a href="ec_member.html" class="link ajax" style="padding-top: 2rem;">View All Member</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--=============== Section 5 ===============-->
+                    <section class="sec parallax-section" id="sec6">
+                        <div class="bg bg-parallax" style="background-image:url(https://www.dhakaboatclub.com/assets/default/landing5.jpg" data-top-bottom="transform: translateY(300px);" data-bottom-top="transform: translateY(-300px);"></div>
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <h2>TESTIMONIAL</h2>
+                            <h3>WHAT SAID ABOUT US</h3>
+                            <div class="bold-separator">
+                                <span></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="testimonials-holder">
+                                        <div class="customNavigation">
+                                            <a class="prev-slide transition"><i class="fa fa-long-arrow-left"></i></a>
+                                            <a class="next-slide transition"><i class="fa fa-long-arrow-right"></i></a>
+                                        </div>
+                                        <div class="testimonials-slider owl-carousel">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-icon"><i class="fa fa-quote-left"></i></div>
+                        </div>
+                    </section>
+
+                    <!--=============== Contact ===============-->
+                    <section class="sec contact-section" id="sec7">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section-title">
+                                        <h3>Become a member now</h3>
+                                        <h4 class="decor-title text-white">Dhaka Boat Club</h4>
+                                        <div class="separator color-separator"></div>
+                                    </div>
+                                    <div class="contact-form-holder">
+                                        <div id="contact-form">
+                                            <div id="message2"></div>
+                                            <form method="post" action="#" name="contactform" id="contactform">
+                                                <input name="name" type="text" class="name" onclick="this.select()" value="Name">
+                                                <input name="email" type="text" class="email" onclick="this.select()" value="E-mail">
+                                                <input name="phone" type="text" class="phone" onclick="this.select()" value="Phone">
+                                                <textarea name="comments" class="comments" onclick="this.select()">Message</textarea>
+                                                <button type="submit" id="submit">Send </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Livewire Component wire-end:8sdv5k7LG9Eeot2RIpfi -->
+
+                <div class="stickly-container">
+                    <ul class="stickly">
+
+                        <li>
+                            <a href="#sec0">
+                            <i class="fa-solid fa-house"></i>
+                            <p> BOAT CLUB</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec1">
+                            <i class="fa-solid fa-timeline"></i>
+                            <p>HISTORY</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec2">
+                            <i class="fa-solid fa-sun"></i>
+                            <p>RESERVATIONS</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec3">
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>OUR Restaurant</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec4">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <p>FACILITIES</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec5">
+                            <i class="fa-solid fa-person-rays"></i>
+                            <p>PRESIDENT</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec6">
+                            <i class="fa-solid fa-magnifying-glass-location"></i>
+                            <p>TESTIMONIALS</p>
+                        </a>
+                        </li>
+
+                        <li>
+                            <a href="#sec7">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                            <p>BECOME A MEMBER</p>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--content end-->
+                <!--=============== footer ===============-->
+                <footer>
+                    <div class="footer-inner">
+                        <div class="container text-center">
+                            <div class="row">
+                                <!--footer social links-->
+                                <div class="col-md-6">
+                                    <div class="footer-social">
+                                        <h3>Find us</h3>
+                                        <ul>
+                                            <li><a href="https://www.google.com/dhakaboatclub" target="_blank"><i class="fa-brands fa-google"></i></i></a></li>
+                                            <li><a href="https://www.linkedin.com/dhakaboatclub" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="https://www.twitter.com/dhakaboatclub" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--subscribe form-->
+                                <div class="col-md-6">
+                                    <div class="footer-info">
+                                        <h4>Newsletter</h4>
+                                        <div class="subcribe-form">
+                                            <form id="subscribe">
+                                                <input class="enteremail" name="email" id="subscribe-email" placeholder="Your email address.." spellcheck="false" type="text">
+                                                <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fa fa-envelope"></i></button>
+                                                <label for="subscribe-email" class="subscribe-message"></label>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bold-separator">
+                                <span></span>
+                            </div>
+                            <!--footer contacts links -->
+                            <ul class="footer-contacts">
+                                <li><a href="#">+8801724-295056 , 09511-774477</a></li>
+                                <li><a href="#">Mirpur Dohs,Dhaka, Bangladesh</a></li>
+                                <li><a href="#">mail@boatclub.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--to top / privacy policy-->
+                    <div class="to-top-holder">
+                        <div class="container">
+                            <p> <span> &#169; <a href="https://opus-bd.com/" target="_blank"> <span> Opus technology limited</span></a> 2024 . </span> All rights reserved.</p>
+                            <div class="to-top"><span>Back To Top </span><i class="fa fa-angle-double-up"></i></div>
+                        </div>
+                    </div>
+                </footer>
+                ;
+                <!--footer end -->
+            </div>
+            <!-- wrapper end -->
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="https://www.dhakaboatclub.com/assets/frontend/js/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.dhakaboatclub.com/assets/frontend/js/plugins.js"></script>
+        <script type="text/javascript" src="https://www.dhakaboatclub.com/assets/frontend/js/scripts.js"></script>
+        <!-- <script src="js/pageScroll.js"></script>
+        <script src="js/scrollspy.js"></script> -->
+
+        <!-- Livewire Scripts -->
+
+        <script src="/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false"></script>
+        <script data-turbo-eval="false" data-turbolinks-eval="false">
+            if (window.livewire) {
+                console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+            }
+
+            window.livewire = new Livewire();
+            window.livewire.devTools(true);
+            window.Livewire = window.livewire;
+            window.livewire_app_url = '';
+            window.livewire_token = '7TZAzI0XufcQoCWHY763B1Dib4C2PYiM120ZuD5G';
+
+            /* Make sure Livewire loads first. */
+            if (window.Alpine) {
+                /* Defer showing the warning so it doesn't get buried under downstream errors. */
+                document.addEventListener("DOMContentLoaded", function() {
+                    setTimeout(function() {
+                        console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+                    })
+                });
+            }
+
+            /* Make Alpine wait until Livewire is finished rendering to do its thing. */
+            window.deferLoadingAlpine = function(callback) {
+                window.addEventListener('livewire:load', function() {
+                    callback();
+                });
+            };
+
+            let started = false;
+
+            window.addEventListener('alpine:initializing', function() {
+                if (!started) {
+                    window.livewire.start();
+
+                    started = true;
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function() {
+                if (!started) {
+                    window.livewire.start();
+
+                    started = true;
+                }
+            });
+        </script>
+    </body>
+
+    </html>
